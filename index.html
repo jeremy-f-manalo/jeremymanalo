@@ -211,43 +211,136 @@
     </div>
 </section>
 
-    <section id="projects" class="py-20 bg-brandNavy/30 block">
-        <div class="max-w-7xl mx-auto px-6 mb-10">
-            <div class="flex justify-between items-end">
-                <div data-aos="fade-right">
-                    <h2 class="text-brandGold mono text-sm font-bold mb-2 tracking-widest uppercase">02. Portfolios</h2>
-                    <h3 class="text-4xl font-extrabold tracking-tight">Project Gallery</h3>
+     <section id="projects" class="py-20 bg-brandNavy/30 block">
+    <div class="max-w-7xl mx-auto px-6 mb-10">
+        <div class="flex justify-between items-end">
+            <div data-aos="fade-right">
+                <h2 class="text-brandGold mono text-sm font-bold mb-2 tracking-widest uppercase italic">01. Portfolios</h2>
+                <h3 class="text-4xl font-extrabold tracking-tight italic">Project Gallery</h3>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="scrollProjects(-450)" class="p-3 border border-brandBlue rounded-full hover:bg-brandBlue transition-colors">
+                    <i class="fa-solid fa-chevron-left text-brandGold"></i>
+                </button>
+                <button onclick="scrollProjects(450)" class="p-3 border border-brandBlue rounded-full hover:bg-brandBlue transition-colors">
+                    <i class="fa-solid fa-chevron-right text-brandGold"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="projectContainer" class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 pb-10 max-w-7xl mx-auto scroll-smooth">
+        
+        <div class="flex-none w-full md:w-[450px] snap-center" data-project-id="PRJ-2025-01" data-analytics-category="Engineering">
+            <div class="bg-brandDark border border-brandBlue rounded-3xl p-8 hover:border-brandGold transition-all duration-500 h-full flex flex-col group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-brandNavy rounded-2xl group-hover:bg-brandGold transition-colors">
+                        <i class="fa-solid fa-layer-group text-2xl group-hover:text-brandDark"></i>
+                    </div>
+                    <span class="mono text-[10px] text-brandGold border border-brandGold/30 px-2 py-1 rounded">ID: 2025-01</span>
                 </div>
-                <div class="flex gap-4">
-                    <button onclick="scrollProjects(-450)" class="p-3 border border-brandBlue rounded-full hover:bg-brandBlue transition-colors">
-                        <i class="fa-solid fa-chevron-left text-brandGold"></i>
-                    </button>
-                    <button onclick="scrollProjects(450)" class="p-3 border border-brandBlue rounded-full hover:bg-brandBlue transition-colors">
-                        <i class="fa-solid fa-chevron-right text-brandGold"></i>
-                    </button>
+                <h4 class="text-2xl font-bold mb-4">Enterprise Data Lakehouse Migration</h4>
+                <p class="text-slate-400 text-sm flex-grow leading-relaxed">Migrated legacy siloed architecture to a unified Delta Lake on Databricks, serving 500+ daily BI users.</p>
+                <div class="mt-8 pt-6 border-t border-brandBlue flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Azure</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">PySpark</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Governance</span>
                 </div>
             </div>
         </div>
 
-        <div id="projectContainer" class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 pb-10 max-w-7xl mx-auto scroll-smooth">
-            <div class="flex-none w-full md:w-[450px] snap-center">
-                <div class="bg-brandDark border border-brandBlue rounded-3xl p-8 hover:border-brandGold transition-all duration-500 h-full flex flex-col group">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="p-3 bg-brandNavy rounded-2xl group-hover:bg-brandGold transition-colors">
-                            <i class="fa-solid fa-layer-group text-2xl group-hover:text-brandDark"></i>
-                        </div>
-                        <span class="mono text-[10px] text-brandGold border border-brandGold/30 px-2 py-1 rounded">PRJ-01</span>
+        <div class="flex-none w-full md:w-[450px] snap-center" data-project-id="PRJ-2025-02" data-analytics-category="Management">
+            <div class="bg-brandDark border border-brandBlue rounded-3xl p-8 hover:border-brandGold transition-all duration-500 h-full flex flex-col group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-brandNavy rounded-2xl group-hover:bg-brandGold transition-colors">
+                        <i class="fa-solid fa-diagram-project text-2xl group-hover:text-brandDark"></i>
                     </div>
-                    <h4 class="text-2xl font-bold mb-4">Enterprise Data Lakehouse Migration</h4>
-                    <p class="text-slate-400 text-sm flex-grow leading-relaxed">Migrated legacy siloed architecture to a unified Delta Lake on Databricks.</p>
-                    <div class="mt-8 pt-6 border-t border-brandBlue flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Azure</span>
-                        <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">PySpark</span>
-                    </div>
+                    <span class="mono text-[10px] text-brandGold border border-brandGold/30 px-2 py-1 rounded">ID: 2025-02</span>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Automated Data Compliance Engine</h4>
+                <p class="text-slate-400 text-sm flex-grow leading-relaxed">Built an automated PII detection and masking pipeline for HIPAA/GDPR compliance across 14 global markets.</p>
+                <div class="mt-8 pt-6 border-t border-brandBlue flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Security</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Python</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">DevOps</span>
                 </div>
             </div>
+        </div>
+
+        <div class="flex-none w-full md:w-[450px] snap-center" data-project-id="PRJ-2025-03" data-analytics-category="Analytics">
+            <div class="bg-brandDark border border-brandBlue rounded-3xl p-8 hover:border-brandGold transition-all duration-500 h-full flex flex-col group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-brandNavy rounded-2xl group-hover:bg-brandGold transition-colors">
+                        <i class="fa-solid fa-chart-pie text-2xl group-hover:text-brandDark"></i>
+                    </div>
+                    <span class="mono text-[10px] text-brandGold border border-brandGold/30 px-2 py-1 rounded">ID: 2025-03</span>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Supply Chain Predictive Analytics</h4>
+                <p class="text-slate-400 text-sm flex-grow leading-relaxed">Forecasted inventory requirements with 94% accuracy using ensemble learning, saving $2M in annual overhead.</p>
+                <div class="mt-8 pt-6 border-t border-brandBlue flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Scikit-Learn</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">SQL</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Tableau</span>
+                </div>
             </div>
-    </section>
+        </div>
+
+        <div class="flex-none w-full md:w-[450px] snap-center" data-project-id="PRJ-2025-04" data-analytics-category="Infrastructure">
+            <div class="bg-brandDark border border-brandBlue rounded-3xl p-8 hover:border-brandGold transition-all duration-500 h-full flex flex-col group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-brandNavy rounded-2xl group-hover:bg-brandGold transition-colors">
+                        <i class="fa-solid fa-cloud-arrow-up text-2xl group-hover:text-brandDark"></i>
+                    </div>
+                    <span class="mono text-[10px] text-brandGold border border-brandGold/30 px-2 py-1 rounded">ID: 2025-04</span>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Real-Time Event Streaming Hub</h4>
+                <p class="text-slate-400 text-sm flex-grow leading-relaxed">Architected a Kafka-based streaming platform processing 10k+ events/sec for instant customer personalization.</p>
+                <div class="mt-8 pt-6 border-t border-brandBlue flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Kafka</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">AWS Lambda</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">NoSQL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-none w-full md:w-[450px] snap-center" data-project-id="PRJ-2025-05" data-analytics-category="AI">
+            <div class="bg-brandDark border border-brandBlue rounded-3xl p-8 hover:border-brandGold transition-all duration-500 h-full flex flex-col group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-brandNavy rounded-2xl group-hover:bg-brandGold transition-colors">
+                        <i class="fa-solid fa-robot text-2xl group-hover:text-brandDark"></i>
+                    </div>
+                    <span class="mono text-[10px] text-brandGold border border-brandGold/30 px-2 py-1 rounded">ID: 2025-05</span>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">LLM-Powered Knowledge Base</h4>
+                <p class="text-slate-400 text-sm flex-grow leading-relaxed">Developed a RAG-based internal search engine using LangChain and Pinecone to reduce support ticket volume by 30%.</p>
+                <div class="mt-8 pt-6 border-t border-brandBlue flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">OpenAI</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">LangChain</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Vector DB</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-none w-full md:w-[450px] snap-center" data-project-id="PRJ-2025-06" data-analytics-category="Automation">
+            <div class="bg-brandDark border border-brandBlue rounded-3xl p-8 hover:border-brandGold transition-all duration-500 h-full flex flex-col group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-brandNavy rounded-2xl group-hover:bg-brandGold transition-colors">
+                        <i class="fa-solid fa-gears text-2xl group-hover:text-brandDark"></i>
+                    </div>
+                    <span class="mono text-[10px] text-brandGold border border-brandGold/30 px-2 py-1 rounded">ID: 2025-06</span>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Multi-Cloud MLOps Pipeline</h4>
+                <p class="text-slate-400 text-sm flex-grow leading-relaxed">Standardized model deployment using MLflow and Terraform, enabling 1-click retraining and deployment across GCP/AWS.</p>
+                <div class="mt-8 pt-6 border-t border-brandBlue flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Terraform</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">MLflow</span>
+                    <span class="px-3 py-1 bg-brandBlue/30 text-[10px] font-bold uppercase rounded">Docker</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <footer class="bg-brandDark border-t border-brandBlue py-10 px-6">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
